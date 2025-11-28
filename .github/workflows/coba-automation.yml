@@ -1,0 +1,14 @@
+name: Coba Automation Pertama
+
+# KAPAN workflow ini jalan
+on:
+  push:           # setiap ada push/commit
+    branches: [ "main" ]   # khusus di branch main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest    # mesin yang dipakai GitHub
+
+    steps:
+      - name: Tampilkan pesan
+        run: echo "Halo dari GitHub Actions! Automation pertama saya di GitHub 🚀"
